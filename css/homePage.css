@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header h1 {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-control {
+  display: flex;
+  justify-content: end;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.form-control input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.form-control input:focus {
+  outline: none;
+}
+
+i.fa-solid.fa-magnifying-glass {
+  font-size: 20px;
+  margin-left: 5px;
+  color: #b2b6b6;
+  position: absolute;
+  right: 50px;
+  top: 82px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.card {
+  background: #fff;
+  box-shadow: 0px 2px 23px #6a696e33;
+  width: 280px;
+  height: 650px;
+  margin: 10px;
+  position: relative;
+  transition: 1s;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+.mediaCard img {
+  height: 300px;
+  width: 100%;
+}
+
+.secondText { 
+  color: #828fa1;
+  line-height: 22px;
+}
+
+.title {
+  color: #2b3d59;
+}
+
+h2.title {
+  padding-bottom: 10px;
+}
+
+.topCard {
+  padding: 20px;
+}
+
+.bottomCard {
+  padding: 20px;
+}
+
+.loader {
+  opacity: 0;
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transition: opacity 0.3s ease-in;
+}
+
+.loader.show {
+  opacity: 1;
+}
+
+.circle {
+  background-color: #4cd964;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  animation: bounce 0.5s ease-in infinite;
+}
+
+.circle:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+
+.circle:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
